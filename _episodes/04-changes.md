@@ -342,12 +342,12 @@ but not yet committed.
 > makes a permanent record of it (as a commit).
 > If you don't have anything staged when you type `git commit`,
 > Git will prompt you to use `git commit -a` or `git commit --all`,
-> which is kind of like gathering *everyone* for the picture!
+> which is kind of like gathering *everyone* to take a group photo!
 > However, it's almost always better to
 > explicitly add things to the staging area, because you might
-> commit changes you forgot you made. (Going back to snapshots,
-> you might get the extra with incomplete makeup walking on
-> the stage for the snapshot because you used `-a`!)
+> commit changes you forgot you made. (Going back to the group photo simile,
+> you might get an extra with incomplete makeup walking on
+> the stage for the picture because you used `-a`!)
 > Try to stage things manually,
 > or you might find yourself searching for "git undo commit" more
 > than you would like!
@@ -536,21 +536,24 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
-> * f22b25e Start notes on Mars as a base
+> 005937f Discuss concerns about Mars' climate for Mummy
+> 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
 >
-> You can also combine the `--oneline` options with others. One useful
-> combination is:
+> You can also combine the `--oneline` option with others. One useful
+> combination adds `--graph` to display the commit history as a text-based
+> graph and to indicate which commits are associated with the
+> current `HEAD`, the current branch `master`, or
+> [other Git references][git-references]:
 >
 > ~~~
-> $ git log --oneline --graph --all --decorate
+> $ git log --oneline --graph
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
+> * 005937f (HEAD -> master) Discuss concerns about Mars' climate for Mummy
 > * 34961b1 Add concerns about effects of Mars' moons on Wolfman
 > * f22b25e Start notes on Mars as a base
 > ~~~
@@ -777,5 +780,6 @@ repository (`git commit`):
 {: .challenge}
 
 [commit-messages]: https://chris.beams.io/posts/git-commit/
+[git-references]: https://git-scm.com/book/en/v2/Git-Internals-Git-References
 
 {% include links.md %}
