@@ -58,6 +58,9 @@ working in teams or not, because it is
     these issues, since learners will almost certainly trip over them
     again.  If learners are running into line ending problems, GitHub
     has a [page][github-line-endings] that helps with troubleshooting.
+    Specifically, the [section on refreshing a repository][github-line-endings-refresh]
+    may be helpful if learners need to change the `core.autocrlf` setting
+    after already having made one or more commits.
 
 *   We don't use a Git GUI in these notes because we haven't found one that
     installs easily and runs reliably on the three major operating systems, and
@@ -285,6 +288,11 @@ what, arise naturally once we start talking about using public services like
 GitHub to store files. Also, the discussion gives learners a chance to catch
 their breath after what is often a frustrating couple of hours.
 
+The Creative Commons family of licenses is recommended for many types of
+works (including software documentation and images used in software) but not
+software itself. Creative Commons [recommends][cc-faq-software] a
+software-specific license instead.
+
 ## [Citation]({{ page.root }}{% link _episodes/12-citation.md %})
 
 ## [Hosting]({{ page.root }}{% link _episodes/13-hosting.md %})
@@ -294,6 +302,7 @@ GitHub.  While we encourage open science, sometimes private repos are the
 only choice. It's always interesting to mention the options to have
 web-hosted private repositories.
 
+[cc-faq-software]: https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software
 [code-school]: https://www.codeschool.com/
 [diffmerge]: https://sourcegear.com/diffmerge/
 [drawings]: https://marklodato.github.io/visual-git-guide/index-en.html
@@ -302,7 +311,8 @@ web-hosted private repositories.
 [git-parable]: http://tom.preston-werner.com/2009/05/19/the-git-parable.html
 [github]: https://github.com/
 [github-gui]: https://git-scm.com/downloads/guis
-[github-line-endings]: https://help.github.com/articles/dealing-with-line-endings/#platform-all
+[github-line-endings]: https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings
+[github-line-endings-refresh]: https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings#refreshing-a-repository-after-changing-line-endings
 [github-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
 [repos-in-repos]: https://github.com/swcarpentry/git-novice/issues/272
 [try-git]: https://try.github.io

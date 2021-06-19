@@ -35,7 +35,7 @@ But the Mummy will appreciate the lack of humidity
 ~~~
 {: .output}
 
-Let's add a line to one partner's copy only:
+Let's add a line to the collaborator's copy only:
 
 ~~~
 $ nano mars.txt
@@ -83,7 +83,7 @@ To https://github.com/vlad/planets.git
 ~~~
 {: .output}
 
-Now let's have the other partner
+Now let's have the owner
 make a different change to their copy
 *without* updating from GitHub:
 
@@ -351,7 +351,7 @@ Conflicts can also be minimized with project management strategies:
 > > a dummy binary file like this:
 > >
 > > ~~~
-> > $ head --bytes 1024 /dev/urandom > mars.jpg
+> > $ head -c 1024 /dev/urandom > mars.jpg
 > > $ ls -lh mars.jpg
 > > ~~~
 > > {: .language-bash}
@@ -513,7 +513,7 @@ Conflicts can also be minimized with project management strategies:
 >
 > - *Make changes* by appending the number `100` to a text file `numbers.txt`
 > - *Update remote* repository to match the local repository
-> - *Celebrate* your success with beer(s)
+> - *Celebrate* your success with some fancy beverage(s)
 > - *Update local* repository to match the remote repository
 > - *Stage changes* to be committed
 > - *Commit changes* to the local repository

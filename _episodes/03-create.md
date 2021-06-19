@@ -43,7 +43,9 @@ $ cd planets
 ~~~
 {: .language-bash}
 
-Then we tell Git to make `planets` a [repository]({{ page.root }}{% link reference.md %}#repository)—a place where Git can store versions of our files:
+Then we tell Git to make `planets` a [repository]({{ page.root }}{% link reference.md %}#repository)
+-- a place where Git can store versions of our files:
+
 
 ~~~
 $ git init
@@ -93,7 +95,7 @@ $ git status
 ~~~
 On branch master
 
-Initial commit
+No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 ~~~
